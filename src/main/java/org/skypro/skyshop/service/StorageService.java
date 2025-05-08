@@ -36,6 +36,10 @@ public class StorageService {
         return allSearchable.values();
     }
 
+    public Optional<Product> getProductById(UUID id) {
+        return Optional.ofNullable(Products.get(id));
+    }
+
     private void fillInTestData() {
         SimpleProduct lamp = new SimpleProduct(UUID.randomUUID(),"Lamp", 1000);
         DiscountedProduct table = new DiscountedProduct(UUID.randomUUID(),"Table", 15000, 10);
