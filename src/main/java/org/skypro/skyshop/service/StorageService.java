@@ -45,7 +45,7 @@ public class StorageService {
         SimpleProduct toy = new SimpleProduct(UUID.randomUUID(),"Toy", 800);
         Article tables = new Article(UUID.randomUUID(),"Tablee", "Tables are funny.");
         Article redTables = new Article(UUID.randomUUID(),"Red Tables Table Table", "Red tables are even funnier.");
-        Article lamps = new Article(UUID.randomUUID(),"Lamppp", "LLLaaammmppp!");
+        Article lamps = new Article(UUID.randomUUID(),"Lamppp", "LLLaaammmppp!!!");
         Article tables2 = new Article(UUID.randomUUID(),"Tableb", "Tables are funny. Really.");
         this.Products.put(lamp.getId(),lamp);
         this.Products.put(table.getId(),table);
