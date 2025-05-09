@@ -19,11 +19,8 @@ import java.util.UUID;
 
 @RestController
 public class ShopController {
-    @Autowired
     private final StorageService storageService;
-    @Autowired
     private final SearchService searchService;
-    @Autowired
     private final BasketService basketService;
 
     public ShopController(StorageService storageService, SearchService searchService, BasketService basketService) {
