@@ -21,13 +21,7 @@ public class BasketService {
         this.storageService = storageService;
     }
 
-    @ExceptionHandler(NoSuchProductException.class)
-    public ResponseEntity<String> noSuchProductHandler
-            (NoSuchProductException e) {
-        return ResponseEntity.badRequest().body(e.getMessage());
-    }
-
-    public void addProduct(UUID id) {
+      public void addProduct(UUID id) {
         if (!storageService.getProductById(id).isPresent()) {
             throw new NoSuchProductException();
         }
